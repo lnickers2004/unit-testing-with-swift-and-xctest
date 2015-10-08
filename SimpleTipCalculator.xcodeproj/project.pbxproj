@@ -23,6 +23,7 @@
 		B8C88E731B181DB400144DE6 /* STCVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C88E721B181DB400144DE6 /* STCVCTests.swift */; };
 		B8C88E741B181ECD00144DE6 /* SimpleTipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8770E8F1AF6878E00DE5F5C /* SimpleTipCalculatorViewController.swift */; };
 		B8C88E761B181FDB00144DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8770E731AF682DA00DE5F5C /* Main.storyboard */; };
+		F74A8F491BC6B06D002594CF /* LarrySimpleTipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74A8F481BC6B06D002594CF /* LarrySimpleTipCalculatorTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B8C88E651B1812A800144DE6 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
 		B8C88E661B18132800144DE6 /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
 		B8C88E721B181DB400144DE6 /* STCVCTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STCVCTests.swift; sourceTree = "<group>"; };
+		F74A8F481BC6B06D002594CF /* LarrySimpleTipCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LarrySimpleTipCalculatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				B8770E851AF682DA00DE5F5C /* SimpleTipCalculatorTests.swift */,
+				F74A8F481BC6B06D002594CF /* LarrySimpleTipCalculatorTests.swift */,
 				B8770E831AF682DA00DE5F5C /* Supporting Files */,
 				B8C88E611B163BFC00144DE6 /* TipServiceTests.swift */,
 				B8C88E641B18123600144DE6 /* SimpleTipCalculatorTests-Bridging-Header.h */,
@@ -182,6 +185,8 @@
 		B8770E621AF682DA00DE5F5C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Derek Jensen";
 				TargetAttributes = {
@@ -255,6 +260,7 @@
 				B8C88E741B181ECD00144DE6 /* SimpleTipCalculatorViewController.swift in Sources */,
 				B8C88E731B181DB400144DE6 /* STCVCTests.swift in Sources */,
 				B8C88E601B163B0200144DE6 /* TipService.swift in Sources */,
+				F74A8F491BC6B06D002594CF /* LarrySimpleTipCalculatorTests.swift in Sources */,
 				B8C88E621B163BFC00144DE6 /* TipServiceTests.swift in Sources */,
 				B8340A561B0AEEC700B246E4 /* TipCalculator.swift in Sources */,
 				B8C88E671B18132800144DE6 /* helpers.m in Sources */,
@@ -331,6 +337,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lnickers/projects/XCodeUnitTestPractice/unit-testing-with-swift-and-xctest/SimpleTipCalculatorTests/SimpleTipCalculatorTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -368,6 +375,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lnickers/projects/XCodeUnitTestPractice/unit-testing-with-swift-and-xctest/SimpleTipCalculatorTests/SimpleTipCalculatorTests-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -412,7 +420,7 @@
 				INFOPLIST_FILE = SimpleTipCalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/derekjensen/Documents/SimpleTipCalculator/SimpleTipCalculatorTests/SimpleTipCalculatorTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lnickers/projects/XCodeUnitTestPractice/unit-testing-with-swift-and-xctest/SimpleTipCalculatorTests/SimpleTipCalculatorTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTipCalculator.app/SimpleTipCalculator";
 			};
@@ -430,6 +438,7 @@
 				INFOPLIST_FILE = SimpleTipCalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lnickers/projects/XCodeUnitTestPractice/unit-testing-with-swift-and-xctest/SimpleTipCalculatorTests/SimpleTipCalculatorTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTipCalculator.app/SimpleTipCalculator";
 			};
 			name = Release;

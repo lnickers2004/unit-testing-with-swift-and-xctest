@@ -41,13 +41,13 @@ class SimpleTipCalculatorViewController: UIViewController, UITextFieldDelegate {
     }
     
     func txtBillAmountDidChange(textField: UITextField) {
-        billAmount = (textField.text as NSString).floatValue
+        billAmount = (textField.text! as NSString).floatValue
         validateInput()
         updateValues()
     }
     
     func txtTaxPercentageDidChange(textField: UITextField) {
-        taxPercentage = (textField.text as NSString).floatValue / 100
+        taxPercentage = (textField.text! as NSString).floatValue / 100
         validateInput()
         updateValues()
     }
@@ -59,7 +59,7 @@ class SimpleTipCalculatorViewController: UIViewController, UITextFieldDelegate {
             let inverseSet = NSCharacterSet(charactersInString:"0123456789.").invertedSet
             let components = string.componentsSeparatedByCharactersInSet(inverseSet)
 
-            let filtered = join("", components)
+            let filtered = components.joinWithSeparator("")
             
             return string == filtered
             
@@ -86,17 +86,17 @@ class SimpleTipCalculatorViewController: UIViewController, UITextFieldDelegate {
     private func updateValues() {
         lblBillAmount.text = String(format: "$%.2f", billAmount!)
         
-        var taxAmount = (taxPercentage! * billAmount!)
+        let taxAmount = (taxPercentage! * billAmount!)
         lblTaxAmount.text = String(format: "$%.2f", taxAmount)
         
         lblCurrentTipPercentage.text = "\(Int(tipPercentage!))%"
         
         var tipPercentageString = String(format: "%.2f", tipPercentage!)
-        var tipAmount = tipCalc.calculateTip(billAmount, taxPercentage: taxPercentage, tipPercentage: Float(tipPercentage!) / 100)
+        let tipAmount = tipCalc.calculateTip(billAmount, taxPercentage: taxPercentage, tipPercentage: Float(tipPercentage!) / 100)
         
         lblTipAmount.text = String(format: "$%.2f", tipAmount!)
         
-        var total = billAmount! + taxAmount + tipAmount!
+        let total = billAmount! + taxAmount + tipAmount!
         
         lblTotalAmount.text = String(format: "$%.2f", total)
     }

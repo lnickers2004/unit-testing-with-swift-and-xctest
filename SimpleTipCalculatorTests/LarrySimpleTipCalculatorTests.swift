@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class SimpleTipTests: XCTestCase {
+class LarrySimpleTipCalculatorTests: XCTestCase {
     
     var calc: TipCalculator!
     
@@ -44,8 +44,10 @@ class SimpleTipTests: XCTestCase {
     }
     
     func testSamplePerformance() {
-        self.measureBlock() {
+        self.measureBlock({
+            NSThread.sleepForTimeInterval(1.0)
             self.calc.calculateTip(20, taxPercentage: 0, tipPercentage: 0)
-        }
+            })
     }
+
 }

@@ -15,7 +15,7 @@ typedef void (^VoidBlock)(void);
 
 @interface Helpers : NSObject
 
-BOOL throws(VoidBlock block);
+BOOL throwsException(VoidBlock block);
 
 @end
 

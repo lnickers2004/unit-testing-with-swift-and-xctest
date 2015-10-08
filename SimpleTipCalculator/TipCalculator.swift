@@ -12,19 +12,19 @@ class TipCalculator {
     
     func calculateTip(billAmount: Float?, taxPercentage: Float?, tipPercentage: Float?) -> Float? {
         if billAmount < 0 {
-            var ex = NSException(name: "NegativeBillException", reason: "BillAmount cannot be negative.", userInfo: nil)
+            let ex = NSException(name: "NegativeBillException", reason: "BillAmount cannot be negative.", userInfo: nil)
             ex.raise()
         }
         
-        var bill = billAmount!
-        var pTax = taxPercentage!
-        var pTip = tipPercentage!
+        let bill = billAmount!
+        let pTax = taxPercentage!
+        let pTip = tipPercentage!
         
-        var tax = bill * pTax
+        let tax = bill * pTax
         
-        var total = bill + tax
+        let total = bill + tax
         
-        var tip = total * pTip
+        let tip = total * pTip
         
         return tip
     }

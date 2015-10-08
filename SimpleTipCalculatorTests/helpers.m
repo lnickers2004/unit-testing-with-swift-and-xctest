@@ -11,7 +11,7 @@
 
 @implementation Helpers: NSObject
 
-BOOL throws(VoidBlock block) {
+BOOL throwsException(VoidBlock block) {
     @try {
         block();
     }

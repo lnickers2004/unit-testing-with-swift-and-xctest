@@ -22,8 +22,8 @@ class STCVCTests: XCTestCase {
     }
 
     func testImportantFuncIsTrue() {
-        var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
-        var vc = storyboard.instantiateViewControllerWithIdentifier("STCVC") as! SimpleTipCalculatorViewController
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+        let vc = storyboard.instantiateViewControllerWithIdentifier("STCVC") as! SimpleTipCalculatorViewController
         
         vc.loadView()
         
